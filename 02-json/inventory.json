@@ -1,0 +1,37 @@
+{
+  "store_name": "Kawaikawa",
+  "isActive": true,
+  "lastUpdated": "2026-09-08T10:00:00Z",
+  "products": [
+    {
+      "id": 1,
+      "name": "kawa",
+      "price": 109,
+      "tags": ["arabica", "beans"],
+      "specs": {
+        "manufacturer": "mbeans",
+        "warrantyMonths": "2027-09-08T10:00:00Z"
+      }
+    },
+    {
+      "id": 2,
+      "name": "ekspres",
+      "price": 109,
+      "tags": ["coffeemachine", "manual"],
+      "specs": {
+        "manufacturer": "lamrazocco",
+        "warrantyMonths": "2030-09-08T10:00:00Z"
+      }
+    },
+    {
+      "id": 3,
+      "name": "młynek",
+      "price": 1899,
+      "tags": ["grinder", "flatburrs"],
+      "specs": {
+        "manufacturer": "malkhonig",
+        "warrantyMonths": "2029-09-08T10:00:00Z"
+      }
+    }
+  ]
+}

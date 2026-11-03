@@ -1,0 +1,33 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "properties": {
+    "order_id": { "type": "integer" },
+    "customer": {
+      "type": "object",
+      "properties": {
+        "fullName": { "type": "string" },
+        "email": { "type": "string", "format": "email" }
+      },
+      "required": ["fullName", "email"]
+    },
+    "items": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "sku": { "type": "string" },
+          "quantity": { "type": "integer", "minimum": 1 },
+          "unitPrice": { "type": "number", "minimum": 1 }
+        }
+      },
+      "minItems": 1
+    },
+    "roles": {
+      "type": "array",
+      "items": { "type": "string" },
+      "minItems": 3
+    }
+  },
+  "required": ["username", "email", "roles"]
+}
