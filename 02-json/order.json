@@ -1,0 +1,21 @@
+{
+  "$schema": "./order_schema.json",
+  "orderId": "ORD-2026-001",
+  "customer": {
+    "fullName": "Marcin Majborski",
+    "email": "mm@mm.pl"
+  },
+  "items": [
+    {
+      "sku": "abcd",
+      "quantity": 1,
+      "unitPrice": 50.0
+    },
+    {
+      "sku": "hdpw",
+      "quantity": 8,
+      "unitPrice": 13.5
+    }
+  ],
+  "status": "pending"
+}

@@ -1,33 +1,52 @@
 {
   "$schema": "http://json-schema.org/draft-07/schema#",
   "type": "object",
+  "additionalProperties": false,
   "properties": {
-    "order_id": { "type": "integer" },
+    "$schema": {
+      "type": "string"
+    },
+    "orderId": {
+      "type": "string"
+    },
     "customer": {
       "type": "object",
       "properties": {
-        "fullName": { "type": "string" },
-        "email": { "type": "string", "format": "email" }
+        "fullName": {
+          "type": "string"
+        },
+        "email": {
+          "type": "string",
+          "format": "email"
+        }
       },
       "required": ["fullName", "email"]
     },
     "items": {
       "type": "array",
+      "minItems": 1,
       "items": {
         "type": "object",
         "properties": {
-          "sku": { "type": "string" },
-          "quantity": { "type": "integer", "minimum": 1 },
-          "unitPrice": { "type": "number", "minimum": 1 }
-        }
-      },
-      "minItems": 1
+          "sku": {
+            "type": "string"
+          },
+          "quantity": {
+            "type": "integer",
+            "minimum": 1
+          },
+          "unitPrice": {
+            "type": "number",
+            "exclusiveMinimum": 0
+          }
+        },
+        "required": ["sku", "quantity", "unitPrice"]
+      }
     },
-    "roles": {
-      "type": "array",
-      "items": { "type": "string" },
-      "minItems": 3
+    "status": {
+      "type": "string",
+      "enum": ["pending", "shipped", "delivered", "cancelled"]
     }
   },
-  "required": ["username", "email", "roles"]
+  "required": ["orderId", "customer", "items", "status"]
 }
