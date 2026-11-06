@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<serverConfig serverName=Production-EU-West port="8080">
+  <debugMode>False</debugMode>
+  <environment>production</environment>
+  <allowedIPs>
+    <ip>192.168.1.1</ip>
+    <ip>10.0.0.1
+  </allowedIPs>
+  <database>
+    <type>PostgreSQL</type>
+    <connectionLimit>50</connectionLimit>
+</serverConfig>
