@@ -1,9 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <user>
-  <username>admin user!</username>
+  <username>admin_user</username>
   <email>invalid-email-address</email>
-  <age>15</age>
+  <age>18</age>
   <roles>
     <role>admin</role>
+    <role>moderator</role>
+    <role>random</role>
   </roles>
 </user>

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<inventory>
+    <storeName>mkom</storeName>
+    <isActive>True</isActive>
+    <lastUpdated>?</lastUpdated>
+    <products>
+        <product>
+            <id>1</id>
+            <name>mouse</name>
+            <price>100</price>
+            <tags></tags>
+            <specs>
+                <manufacturer>Lenevo</manufacturer>
+                <warrantyMonths>12</warrantyMonths>
+            </specs>
+        </product>
+        <product>
+            <id>2</id>
+            <name>monitor</name>
+            <price>1200</price>
+            <tags></tags>
+            <specs>
+                <manufacturer>Dell</manufacturer>
+                <warrantyMonths>24</warrantyMonths>
+            </specs>
+        </product>
+        <product>
+            <id>3</id>
+            <name>PC</name>
+            <price>15000</price>
+            <tags></tags>
+            <specs>
+                <manufacturer>MSI</manufacturer>
+                <warrantyMonths>20</warrantyMonths>
+            </specs>
+        </product>
+    </products>
+</inventory>
