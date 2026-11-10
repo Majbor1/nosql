@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<product productId="invalid_id">
+  <title>L</title>
+  <price>-15.00</price>
+  <category>computers</category>
+  <inStock>maybe</inStock>
+</product>

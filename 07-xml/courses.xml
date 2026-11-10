@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<courses>
+  <course code="CS101">
+    <title>Introduction to Computer Science</title>
+    <instructor>John Doe</instructor>
+  </course>
+  <course code="CS102">
+    <title>Data Structures &amp; Algorithms</title>
+    <instructor>Jane Smith</instructor>
+  </course>
+</courses>
